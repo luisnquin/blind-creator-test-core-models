@@ -3,7 +3,6 @@ package migrations
 import (
 	"log"
 
-	"github.com/jinzhu/gorm"
 	"github.com/luisnquin/blind-creator-test-core-models/models/agencies"
 	"github.com/luisnquin/blind-creator-test-core-models/models/campaign_creator_social_network_actions"
 	"github.com/luisnquin/blind-creator-test-core-models/models/campaigns"
@@ -12,6 +11,7 @@ import (
 	"github.com/luisnquin/blind-creator-test-core-models/models/creators"
 	"github.com/luisnquin/blind-creator-test-core-models/models/user_agency_relations"
 	"github.com/luisnquin/blind-creator-test-core-models/models/users"
+	"gorm.io/gorm"
 )
 
 func ApplyMigrations(dbConnection *gorm.DB) {
